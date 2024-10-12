@@ -7,6 +7,7 @@ const BookingsPage = async () => {
 
   return (
     <>
+      <Heading title="my bookings" />
       {bookings.length === 0 ? (
         <p className="text-gray-600 mt-4">You have no bookings</p>
       ) : (
