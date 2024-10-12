@@ -11,9 +11,7 @@ import { useAuth } from "@/context/authContext";
 const Header = () => {
   const router = useRouter();
 
-
-  const {isAuthenticated, setIsAuthenticated}= useAuth();
-
+  const { isAuthenticated, setIsAuthenticated } = useAuth();
 
   const handleLogout = async () => {
     const { success, error } = await removeSession();
@@ -55,7 +53,7 @@ const Header = () => {
                       Bookings
                     </Link>
                     <Link
-                      href="/rooms/add"
+                      href="/room/add"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
                     >
                       Add Room
@@ -88,7 +86,7 @@ const Header = () => {
 
               {isAuthenticated && (
                 <>
-                  <Link href="/rooms/my">
+                  <Link href="/room/my">
                     <FaBuilding className="inline mr-1" /> My Rooms
                   </Link>
                   <button
@@ -116,21 +114,20 @@ const Header = () => {
           {/* <!-- Logged In Only --> */}
           {isAuthenticated && (
             <>
-            <Link
-            href="/bookings"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
-          >
-            Bookings
-          </Link>
-          <Link
-            href="/rooms/add"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
-          >
-            Add Room
-          </Link>
+              <Link
+                href="/bookings"
+                className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+              >
+                Bookings
+              </Link>
+              <Link
+                href="/room/add"
+                className="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white"
+              >
+                Add Room
+              </Link>
             </>
           )}
-          
         </div>
       </div>
     </header>

@@ -1,9 +1,21 @@
-import React from 'react'
+import Heading from "@/components/Heading";
+import getMyBookings from "../actions/getMyBookings";
+import BookedRoomCard from "@/components/BookedRoomCard";
 
-const BookingsPage = () => {
+const BookingsPage = async () => {
+  const bookings = await getMyBookings();
+
   return (
-    <div>booking page</div>
-  )
-}
+    <>
+      {bookings.length === 0 ? (
+        <p className="text-gray-600 mt-4">You have no bookings</p>
+      ) : (
+        bookings.map((booking) => (
+          <BookedRoomCard key={booking.$id} booking={booking} />
+        ))
+      )}
+    </>
+  );
+};
 
-export default BookingsPage
+export default BookingsPage;
