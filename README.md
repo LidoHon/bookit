@@ -32,8 +32,8 @@ To run this project locally, you need:
 
 1. Clone the repository:
    \`\`\`bash
-   git clone https://github.com/yourusername/room-booking-project.git
-   cd room-booking-project
+   git clone https://github.com/LidoHon/bookit.git
+   cd bookit
    \`\`\`
 
 2. Install dependencies:
