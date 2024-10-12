@@ -31,28 +31,28 @@ To run this project locally, you need:
 ## Getting Started
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/LidoHon/bookit.git
    cd bookit
-   \`\`\`
+   ```
 
 2. Install dependencies:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. Create a `.env.local` file with your Appwrite and database configurations:
-   \`\`\`
+  ```
    NEXT_PUBLIC_APPWRITE_PROJECT_ID=<your_project_id>
    NEXT_PUBLIC_APPWRITE_ENDPOINT=<your_appwrite_endpoint>
    NEXT_PUBLIC_APPWRITE_DATABASE=<your_database_id>
    NEXT_PUBLIC_APPWRITE_COLLECTION_BOOKINGS=<your_bookings_collection_id>
-   \`\`\`
+   ```
 
 4. Run the development server:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+ 
 
 5. Open your browser and navigate to `http://localhost:3000`.
 
