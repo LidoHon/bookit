@@ -1,7 +1,7 @@
 # Room Booking Project
 
 This project is a **Room Booking System** built with **Next.js** for server-side rendering and **Appwrite** as the backend for database and authentication. Users can check room availability, book rooms, and manage bookings.
-![Room Booking](./images/screen.png)
+![Room Booking](./public/images/screen.png)
 
 
 ## Features
